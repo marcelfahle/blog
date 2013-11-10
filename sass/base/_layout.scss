@@ -27,7 +27,7 @@ $header-padding-bottom: 1.5em !default;
   margin: 0;
   padding: 0 $pad-medium 1px;
   background-color: lighten($sidebar-bg, 2);
-  border-top: 1px solid lighten($sidebar-border, 4);
+  //border-top: 1px solid lighten($sidebar-border, 4);
   section {
     &.odd, &.even { float: left; width: 48%; }
     &.odd { margin-left: 0; }
@@ -98,7 +98,7 @@ aside.sidebar {
   float: none;
   padding: 0 $pad-min 1px;
   background-color: lighten($sidebar-bg, 2);
-  border-top: 1px solid $sidebar-border;
+  //border-top: 1px solid $sidebar-border;
   @extend .group;
 }
 
@@ -122,7 +122,6 @@ body.sidebar-footer {
 }
 
 @media only screen and (min-width: 550px) {
-  body > header { font-size: $header-font-size; }
 }
 @media only screen and (min-width: 750px) {
   aside.sidebar { @include collapse-sidebar; }
@@ -132,7 +131,6 @@ body.sidebar-footer {
 }
 @media only screen and (min-width: 768px) {
   body { -webkit-text-size-adjust: auto; }
-  body > header { font-size: $header-font-size * 1.2; }
   #main {
     padding: 0;
     margin: 0 auto;
@@ -167,7 +165,6 @@ body.sidebar-footer {
 }
 
 @media only screen and (min-width: 992px) {
-  body > header { font-size: $header-font-size * 1.3; }
   #content { margin-right: $sidebar-width-wide; }
   #content {
     > div, > article {
@@ -188,5 +185,158 @@ body.sidebar-footer {
   @media only screen and (min-width: 768px) {
     ul, ol { margin-left: 0; }
   }
+}
+.projects {
+  h2 {
+    font-size: 6em;
+    margin-bottom:0;
+    color: #3498db;
+  }
+}
+h3 {
+  color: white;
+  background: #2c3e50;
+  padding: 0;
+  margin-top: 50px;
+  font-sizE: 1.5em;
+  padding: 2px;
+}
+.project_screenshots {
+  width: 514px;
+  width: 514px;
+  background: #00d470;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  text-align: center;
+  a {
+    position: relative;
+    display: inline-block;
+    margin-right: 7px;
+
+  }
+  a:nth-child(even){
+    margin-right: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .project_rollover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 246px;
+    height: 153px;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in ;
+    -moz-transition: opacity 100ms ease-in ;
+    -o-transition: opacity 100ms ease-in ;
+    transition: opacity 100ms ease-in ;
+    background: transparent image-url('magnify.png') center center no-repeat;
+  }
+  .project_rollover:hover {
+    opacity: 0.7;
+  }
+  img {
+    float: left;
+    -webkit-border-radius: 0em;
+    -moz-border-radius: 0em;
+    -ms-border-radius: 0em;
+    -o-border-radius: 0em;
+    border-radius: 0em;
+    //margin-left: 7px;
+    border: none;
+    background: white;
+    padding: 7px;
+    //margin-top: 7px !important;
+  }
+  img:nth-child(0), img:nth-child(1) {
+    //margin-top: 0 !important;
+  }
+}
+.project_screenshots:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.project_meta {
+  margin-top: 20px;
+  strong a, .not_public {
+    background: #2c3e50;
+    color: #fff !important;
+    padding: 2px;
+    text-decoration: none;
+    font-family: Helvetica,Arial,sans-serif !important;
+    -webkit-transition: background-color 200ms ease-out ;
+    -moz-transition: background-color 200ms ease-out ;
+    -o-transition: background-color 200ms ease-out ;
+    transition: background-color 200ms ease-out ;
+  }
+  strong a:hover {
+    background: #2ecc71;
+  }
+  .not_public {
+    background: #6c7884;
+  }
+}
+.project_screenshots.telekom {
+  background: #e20074;
+  .project_rollover {
+    background-color: #8bceea;
+  }
+}
+.project_screenshots.thomasandfriends{
+  background: #007eb3;
+  .project_rollover {
+    background-color: #007eb3;
+  }
+}
+.project_screenshots.jumblzar {
+  background: #e99a23;
+  .project_rollover {
+    background-color: #41b3ab;
+  }
+}
+.project_screenshots.gedankenwerk{
+  background: #000;
+  .project_rollover {
+    background-color: #5ceb00;
+  }
+}
+.project_screenshots.tke {
+  background: #004b7c;
+  .project_rollover {
+    background-color: #bfbfbf;
+  }
+}
+
+
+
+
+
+
+/* RESUME */
+.contact_photo {
+  float: left;
+  width: 40%;
+  margin-right: 60px;
+}
+.contact_details {
+  ul {
+    list-style: none;
+  }
+   
+}
+section h4 {
+  font-size: 1.1em;
+  margin-top: .5em;
+}
+section h5 {
+
+  margin-top: -.9em;
 }
 

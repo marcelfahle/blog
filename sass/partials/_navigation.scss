@@ -1,10 +1,12 @@
 body > nav {
   position: relative;
   background-color: $nav-bg;
-  @include background($nav-bg-front, $nav-bg-back);
-  border: {
-    top: 1px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+  max-width: 560px;
+  margin: 0 auto;
+  //@include background($nav-bg-front, $nav-bg-back);
+  //border: {
+  //  top: 1px solid $nav-border-top;
+  //  bottom: 1px solid $nav-border-bottom; }
   padding-top: .35em;
   padding-bottom: .35em;
   form {
@@ -32,17 +34,18 @@ body > nav {
     }
   }
   fieldset[role=search]{ float: right; width: 48%; }
-  fieldset.mobile-nav{ float: left; width: 48%;
+  fieldset.mobile-nav{ float: left; width: 48%; margin-top: 100px;
     select{ width: 100%; font-size: .8em; border: 1px solid #888;}
   }
   ul { display: none; }
   @media only screen and (min-width: 550px) {
     font-size: .9em;
     ul {
-      @include horizontal-list(0);
+      //@include horizontal-list(0);
       float: left;
       display: block;
       padding-top: .15em;
+      list-style: none;
     }
     ul.subscription {
       margin-left: .8em;
@@ -53,20 +56,22 @@ body > nav {
       margin: 0;
     }
     a {
-      @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
+      //@include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
+      @include link-colors(black, #2ecc71, $visited: black);
       font-family: $sans;
       text-shadow: lighten($nav-bg, 12) 0 1px;
       float: left;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 24px !important;
+      font-weight: bold;
       padding: .1em 0;
-      line-height: 1.5em;
+      line-height: 1em !important;
     }
     li + li {
       border-left: 1px solid $nav-border-left;
-      margin-left: .8em;
+      //margin-left: .8em;
       a {
-        padding-left: .8em;
+        //padding-left: .8em;
         border-left: 1px solid $nav-border-right;
       }
     }

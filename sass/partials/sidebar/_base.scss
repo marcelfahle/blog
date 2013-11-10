@@ -1,5 +1,5 @@
 .side-shadow-border {
-  @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
+  //@include box-shadow(lighten($sidebar-bg, 5) 0 1px);
 }
 aside.sidebar {
   overflow: hidden;
@@ -15,7 +15,7 @@ aside.sidebar {
       margin: 1.5em 0 0;
       padding-bottom: .2em;
       border-bottom: 1px solid $sidebar-border;
-      @extend .side-shadow-border;
+      //@extend .side-shadow-border;
       + p {
         padding-top: .4em;
       }
@@ -35,7 +35,7 @@ aside.sidebar {
     padding: .5em 0;
     margin: 0;
     border-bottom: 1px solid $sidebar-border;
-    @extend .side-shadow-border;
+    //@extend .side-shadow-border;
     p:last-child {
       margin-bottom: 0;
     }

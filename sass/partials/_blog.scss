@@ -6,7 +6,8 @@ article {
     padding-top: 2em;
     padding-bottom: 1em;
     margin-bottom: 1em;
-    background: $img-border bottom left repeat-x;
+    background: none !important;
+    //background: $img-border bottom left repeat-x;
     h1 {
       margin: 0;
       a { text-decoration: none;
@@ -19,7 +20,7 @@ article {
       &.meta {
         @extend .sans;
         text-transform: uppercase;
-        position: absolute; top: 0;
+        position: absolute; top: 20px;
       }
     }
     @media only screen and (min-width: 768px) {
@@ -87,7 +88,7 @@ article + article {
     background: $img-border top left repeat-x;
   }
 }
-#content .blog-index {
+#content .blog-index, #content > div {
   padding: { top: 0; bottom: 0; }
   article { padding-top: 2em; }
   article header { background: none; padding-bottom: 0; }

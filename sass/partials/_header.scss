@@ -1,18 +1,20 @@
 body > header {
-  background: $header-bg;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: -20px;
+  left: -20px;
   h1 {
-    display: inline-block;
+    width: 240px;
+    height: 170px;
+    text-indent: -9999em ;
     margin: 0;
-    a, a:visited, a:hover {
-      color: $title_color;
-      text-decoration: none;
+    background: transparent image-url('logo-mf-flat-green.png') no-repeat;
+    a {
+      display: block;
+      height: 170px;
     }
-  }
-  h2 {
-    margin: .2em 0 0;
-    @extend .sans;
-    font-size: 1em;
-    color: $subtitle-color;
-    font-weight: normal;
+
   }
 }
