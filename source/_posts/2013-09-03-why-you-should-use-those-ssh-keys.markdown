@@ -13,7 +13,7 @@ Alright kids, let's kick this off with some basic shell-fu,
 which will serve as a good foundation for things to come: 
 **SSH Keys and how to properly use them for authentication.**
 
-{% img right ./media/images/sshkeyauth-mkay.jpg 400 225 'SSH Key authentication is good, mkay..' %}
+{% img right /media/images/sshkeyauth-mkay.jpg 400 225 'SSH Key authentication is good, mkay..' %}
 Up until two years or so ago, I actually didn't know much about it, 
 so I guess it's not so super-basic after all (or I'm just a bit behind). 
 Either way, *SSH Key authentication is good, [m'kay](http://www.youtube.com/watch?v=E4_tOiLB_Ko)...* 
