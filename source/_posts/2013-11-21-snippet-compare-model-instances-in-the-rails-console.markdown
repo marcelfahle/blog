@@ -3,7 +3,7 @@ layout: post
 title: "Snippet: Compare Model Instances in the Rails Console using sprintf"
 date: 2013-11-21 15:02
 comments: true
-published: false
+published: true
 categories: ruby, rails, console, snippets
 ---
 Today we had some technical problems with one user account on [Jumblzar](http://jumblzar.com)
