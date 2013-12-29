@@ -9,8 +9,11 @@ footer: true
 ---
 <section class="contact-details">
 <div itemscope itemtype="http://schema.org/Person">
+<div class="contact_sidebar">
 <img src="/media/images/profile_pic2.jpg" class="contact_photo" itemprop="image" width="250" height="167" alt="Marcel Fahle"
-style="margin-bottom: 100px;"/>
+/>
+[PDF Download](/media/Marcel_Fahle_Resume.pdf)
+</div>
 
   <div class="contact_details">
   <h1><span itemprop="name">Marcel Fahle</span></h1>
